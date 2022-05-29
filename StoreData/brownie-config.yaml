@@ -1,0 +1,6 @@
+# To import Private key after creating account executing `brownie accounts new <my account>`
+dotenv: .env
+
+# You can decide what wallet I'm going to use and when I'm going to use
+wallets:
+  from_key: ${PRIVATE_KEY}
