@@ -8,3 +8,6 @@
 ## EthereumTokens
 ### Deploy Ethereum tokens using erc20
 ***
+
+### Get faucets from chainlink
+#### https://faucets.chain.link/rinkeby
