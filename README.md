@@ -1,5 +1,5 @@
 ## StoreData
-### Store addresses
+### Store input numbers
 ***
 
 ## ManageFund
