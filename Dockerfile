@@ -19,4 +19,6 @@ RUN npm install -g ganache-cli
 RUN python3 -m pip install --user pipx
 RUN python3 -m pipx ensurepath
 # RUN bash -c "source ${HOME}/.bashrc" 
-# RUN pipx install eth-brownie # type in this command when setting is complete
+
+# type in this command when setting is complete
+# `pipx install eth-brownie`
