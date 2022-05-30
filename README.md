@@ -1,9 +1,9 @@
 # Smart Contracts
-## StoreData
+## 1. StoreData
 ### Store input numbers
 ***
 
-## ManageFund - Future work
+## 2. ManageFund
 ### Deal with deposits
 ***
 ## EthereumTokens - Future work
@@ -15,7 +15,7 @@
 ### Start
 1. Create Contract directory
 2. Execute `brownie init` inside directory
-
+3. Start coding
 ***
 
 ### Get faucets from chainlink
