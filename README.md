@@ -2,10 +2,10 @@
 ### Store input numbers
 ***
 
-## ManageFund
+## ManageFund - Future work
 ### Deal with deposits
 ***
-## EthereumTokens
+## EthereumTokens - Future work
 ### Deploy Ethereum tokens using erc20
 ***
 
