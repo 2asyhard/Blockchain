@@ -1,4 +1,6 @@
 # Smart Contracts
+***
+
 ## 1. StoreData
 ### Store input numbers
 ***
@@ -6,10 +8,10 @@
 ## 2. ManageFund
 ### Deal with deposits
 ***
-## EthereumTokens - Future work
+
+## 3. EthereumTokens
 ### Deploy Ethereum tokens using erc20
 ***
-
 
 ## Brownie
 ### Start
