@@ -1,5 +1,9 @@
 # To import Private key after creating account executing `brownie accounts new <my account>`
+# In order to connect to test net such as Rinkeby add 'export WEB3_INFURA_PROJECT_ID=<your id>' to .env file
+  # Get your id from infura.io/dashboard and create new project, and grab project id from key tab
 dotenv: .env
+
+
 
 # You can decide what wallet I'm going to use and when I'm going to use
 wallets:
