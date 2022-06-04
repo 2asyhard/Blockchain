@@ -18,10 +18,9 @@
 ***
 
 ## Brownie
-### Start
-1. Create Contract directory
-2. Execute `brownie init` inside directory
-3. Start coding
+    1. Create Contract directory
+    2. Execute `brownie init` inside directory
+    3. Start coding
 ***
 
 ### Get faucets from chainlink
