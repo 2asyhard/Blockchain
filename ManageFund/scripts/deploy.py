@@ -28,9 +28,10 @@ def deploy_manage_fund():
         # when publish_source=True, you can verify your contract code in etherscan
         # you have to add etherscan api key as ETHERSCAN_TOKEN in .env file
     )
-
-    # I executed fund() here instead of scripts.fund_and_withdraw,
-    # because I was unable to install ganache in docker container
+    """
+    I executed fund() and withdraw() below instead of scripts.fund_and_withdraw,
+    because I was unable to install ganache in docker container
+    """
     # from scripts.fund_and_withdraw import fund, withdraw
     # fund()
     # withdraw()

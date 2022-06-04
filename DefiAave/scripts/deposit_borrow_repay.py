@@ -1,27 +1,26 @@
-"""
-1. Swap our ETH for WETH
-2. Deposit some ETH(WETH) into aave
-3. Borrow some asset with the ETH collateral
-4. Repay everything back
-"""
 from scripts.helper import get_account
 from brownie import network, config, interface
 from scripts.get_weth import get_weth
 from web3 import Web3
 
 
-# 0.1
 amount = Web3.toWei(0.1, "ether")
 
 
 def main():
-    # 1. get WETH using ETH
+    """
+    1. Swap our ETH for WETH
+    2. Deposit some ETH(WETH) into aave
+    3. Borrow some asset with the ETH collateral
+    4. Repay everything back
+    """
+    # 1. get WETH using ETH ---------------------------------------
     account = get_account()
     erc20_address = config["networks"][network.show_active()]["weth_token"]
     if network.show_active() in ["mainnet-fork"]:
         get_weth()
 
-    # 2. deposit to aave
+    # 2. deposit to aave ---------------------------------------
 
     # get lending pool contract
     lending_pool = get_lending_pool()
@@ -41,7 +40,7 @@ def main():
     tx.wait(1)
     print("Deposited!!!\n")
 
-    # 3. borrow
+    # 3. borrow ---------------------------------------
     # check my status
     available_borrow_eth, total_debt_eth = get_borrowable_data(lending_pool, account)
 
@@ -70,7 +69,7 @@ def main():
     print("Successfully borrowed!!")
     get_borrowable_data(lending_pool, account)
 
-    # 4. repay
+    # 4. repay ---------------------------------------
     repay_all(amount, lending_pool, account)
 
     print("You just deposited, borrowed and repayed with Aave, Brownie and Chainlink!")
@@ -155,10 +154,10 @@ def get_lending_pool():
     lending pool contracts address can change depending on conditions
     so use LendingPoolAddressesProvider to get valid lending pool contracts address
     url: https://docs.aave.com/developers/v/1.0/developing-on-aave/the-protocol/lendingpooladdressesprovider
-    """
-    """
-    if your going to work with 1 or 2 functions in contracts
-    you can just make interfaces by yourself
+
+    tips
+        if your going to work with 1 or 2 functions in contracts
+        you can just make interfaces by yourself
     """
 
     # get lending pool address by using lending pool address provider

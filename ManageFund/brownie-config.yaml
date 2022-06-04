@@ -2,7 +2,6 @@
 dependencies:
   # - <organization/repo>@<version>
   - smartcontractkit/chainlink-brownie-contracts@1.1.1
-
 compiler:
   solc:
     remappings:
@@ -12,6 +11,7 @@ compiler:
 # if warning sign below pops up when compile
 # `Unable to compile smartcontractkit/chainlink-brownie-contracts@1.1.1 due to a NamespaceCollision`
 # remove all the files in build directory
+
 
 dotenv: .env
 networks:
