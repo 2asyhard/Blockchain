@@ -1,25 +1,5 @@
 from brownie import StoreData, accounts
 
-"""
-    1. Arrange
-    2. Act
-    3. Assert
-
-    Execute `brownie test`
-    
-    Tips
-        For testing only one test
-            Execute `brownie test -k test_updating_store_data`
-        
-        Use python shell when test failed
-            Execute `brownie test --pdb`
-
-        To show detail test results
-            Execute `brownie test -s`
-        
-        check out pytest 
-"""
-
 
 def test_deploy():
     # arrange
@@ -45,3 +25,30 @@ def test_updating_store_data():
 
     # assert
     assert expected == store_data.retrieve()
+
+
+"""         Testing
+You can code testing functions in smart contract
+But it is more efficient to test in smart contract development framework languages(python, javascript, ...)
+Use tests folder for testing
+"""
+
+"""
+    Test sequence
+        1. Arrange
+        2. Act
+        3. Assert
+
+    Execute `brownie test` in terminal
+    
+    Tips
+        For testing only one function
+            Execute `brownie test -k <function name>`
+        
+        Use python shell when test failed
+            Execute `brownie test --pdb`
+
+        To show detail test results
+            Execute `brownie test -s`
+"""
+

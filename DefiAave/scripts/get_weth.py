@@ -19,8 +19,6 @@ def get_weth():
     """
 
     account = get_account()
-    # ABI / Address
-    # get weth contract
     weth = interface.IWeth(config["networks"][network.show_active()]["weth_token"])
 
     # call function and deposit 0.1 eth
