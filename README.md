@@ -17,6 +17,10 @@
 ### Deposit, borrow, repay to Aave
 ***
 
+## 5. Lottery
+### Deploy, receive funds, select winner using random number, send all funds in contract to winner
+***
+
 ## Brownie
     1. Create Contract directory
     2. Execute `brownie init` inside directory
